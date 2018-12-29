@@ -1,0 +1,132 @@
+extends ../layout/home.pug
+block view
+  // HEADER END
+  section.featured-img.text-center.portfolio-bg
+    .overlay
+    .breadcrumbs
+      .table.width-100p.height-100p
+        .table-row
+          .table-cell.align-middle
+            .h4 OUR PORTFOLIO
+            ul
+              li
+                a(href='index.html') Home
+              li
+                span -
+              li
+                span Portfolio
+  // PAGE CONTENT START
+  section.page-content
+    .container.page-content-wrapper
+      .row
+        .col-lg-12
+          .portfolio-wrapper
+            ul.portfolio-filter
+              li.active
+                .filter-item(data-filter='all') All
+                span.spliter
+              li
+                .filter-item(data-filter='web') Web
+                span.spliter
+              li
+                .filter-item(data-filter='print') Print
+                span.spliter
+              li
+                .filter-item(data-filter='photos') Photos
+                span.spliter
+            .portfolio-list.grid
+              .item.web
+                .portfolio-holder.scale-big.animate-in
+                  figure.imghvr-shutter-out-vert
+                    img.img-responsive(src='assets/images/recent-work-1.jpg', alt='portfolio-img')
+                    figcaption
+                      .table
+                        .table-row
+                          .table-cell.text-center.align-middle
+                            .subtitle Lorem Ipsum
+                            .title development
+                            .description Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            a.btn.transparent.mt20(href='portfolio-detail.html') Detailed
+                            a.lightbox(data-lightbox='recent-work-1', href='assets/images/recent-work-1.jpg')
+                              i.fa.fa-plus
+              .item.web
+                .portfolio-holder.scale-big.animate-in
+                  figure.imghvr-shutter-out-vert
+                    img.img-responsive(src='assets/images/recent-work-2.jpg', alt='portfolio-img')
+                    figcaption
+                      .table
+                        .table-row
+                          .table-cell.text-center.align-middle
+                            .subtitle Lorem Ipsum
+                            .title development
+                            .description Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            a.btn.transparent.mt20(href='portfolio-detail.html') Detailed
+                            a.lightbox(data-lightbox='recent-work-2', href='assets/images/recent-work-2.jpg')
+                              i.fa.fa-plus
+              .item.photos
+                .portfolio-holder.scale-big.animate-in
+                  figure.imghvr-shutter-out-vert
+                    img.img-responsive(src='assets/images/recent-work-3.jpg', alt='portfolio-img')
+                    figcaption
+                      .table
+                        .table-row
+                          .table-cell.text-center.align-middle
+                            .subtitle Lorem Ipsum
+                            .title development
+                            .description Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            a.btn.transparent.mt20(href='portfolio-detail.html') Detailed
+                            a.lightbox(data-lightbox='recent-work-3', href='assets/images/recent-work-3.jpg')
+                              i.fa.fa-plus
+              .item.print
+                .portfolio-holder.scale-big.animate-in
+                  figure.imghvr-shutter-out-vert
+                    img.img-responsive(src='assets/images/recent-work-4.jpg', alt='portfolio-img')
+                    figcaption
+                      .table
+                        .table-row
+                          .table-cell.text-center.align-middle
+                            .subtitle Lorem Ipsum
+                            .title development
+                            .description Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            a.btn.transparent.mt20(href='portfolio-detail.html') Detailed
+                            a.lightbox(data-lightbox='recent-work-4', href='assets/images/recent-work-4.jpg')
+                              i.fa.fa-plus
+  // PAGE CONTENT END
+  // TESTIMONIALS SECTION START
+  section
+    .testimonial-wrapper.parallax(data-stellar-background-ratio='0.1', style='background-image: url(assets/images/testimonial-bg.jpg);')
+      .overlay
+        .container
+          .row
+            .testimonial-slider.owl-carousel.owl-theme.col-md-8.col-sm-12
+              .item
+                .avatar
+                  .author
+                    img(src='assets/images/testimonial-1.jpg', alt='avatar', width='70', height='70')
+                .testimonial-content
+                  .name JACK LONDON
+                  .job Graphic Designer
+                  span.spliter
+                  div
+                    | "Let her go, Granser," Hoo-Hoo encouraged; for the old man was already maundering about the  dis respect for elders and the reversion to cruelty of all humans that fell from high culture  to primitive conditions.
+              .item
+                .avatar
+                  .author
+                    img(src='assets/images/testimonial-1.jpg', alt='avatar', width='70', height='70')
+                .testimonial-content
+                  .name JACK LONDON
+                  .job Graphic Designer
+                  span.spliter
+                  div
+                    | "Let her go, Granser," Hoo-Hoo encouraged; for the old man was already maundering about the  dis respect for elders and the reversion to cruelty of all humans that fell from high culture  to primitive conditions.
+              .item
+                .avatar
+                  .author
+                    img(src='assets/images/testimonial-1.jpg', alt='avatar', width='70', height='70')
+                .testimonial-content
+                  .name JACK LONDON
+                  .job Graphic Designer
+                  span.spliter
+                  div
+                    | "Let her go, Granser," Hoo-Hoo encouraged; for the old man was already maundering about the  dis respect for elders and the reversion to cruelty of all humans that fell from high culture  to primitive conditions.
+  // TESTIMONIALS SECTION END

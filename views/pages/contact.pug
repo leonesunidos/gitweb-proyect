@@ -1,0 +1,79 @@
+extends ../layout/home.pug
+
+block view
+
+  // HEADER END
+  section.featured-img.text-center.contact-bg
+    .overlay
+    .breadcrumbs
+      .table.width-100p.height-100p
+        .table-row
+          .table-cell.align-middle
+            .h4 CONTACT US
+            ul
+              li
+                a(href='index.html') Home
+              li
+                span -
+              li
+                span Contact
+  // PAGE CONTENT START
+  section.page-content.contact-wrapper
+    .container.page-content-wrapper
+      .row.contact-holder
+        .col-lg-4.col-md-4.col-sm-12.col-xs-12.contact-detail.col-md-push-8
+          .heding-wrapper.text-left.contact-page-ops
+            span.heading-spn Find Us
+            span.spliter
+          .detail-holder.table
+            .table-row
+              .left-detail.table-cell.align-middle
+                span.scale-big.animate-in
+                  i.fa.fa-map-marker
+                .clearfix
+                span.small-spliter.animate-in.spliter
+              .right-detail.table-cell.align-middle
+                span  Los Angeles, 1234, ipsum set emt Tehun Street 008 road 234-5678 
+          .detail-holder.table
+            .table-row
+              .left-detail.table-cell.align-middle
+                span.scale-big.animate-in
+                  i.fa.fa-envelope-o
+                .clearfix
+                span.small-spliter.animate-in.spliter
+              .right-detail.table-cell.align-middle
+                span
+                  a(href='mailto:info@domain.com') info@domain.com
+                  br
+                  a(href='mailto:personal@mail.com') personal@mail.com
+          .detail-holder.table
+            .table-row
+              .left-detail.table-cell.align-middle
+                span.scale-big.animate-in
+                  i.fa.fa-phone
+                .clearfix
+                span.small-spliter.animate-in.spliter
+              .right-detail.table-cell.align-middle
+                span
+                  | (800) 9235 3658 32
+                  br
+                  | 								(800) 9235 3658 32
+          // MAP SECTION START
+          section.map-container
+            #map-canvas
+          // MAP SECTION END
+        .col-lg-8.col-md-8.col-sm-12.col-xs-12.col-md-pull-4
+          .row
+            .col-md-9
+              p
+                | Feel free to talk to our online representative at any time you please using our Live Chat system on our website or one of the below instant messaging programs.
+                | (24/7 Support!)  Phone General Inquiries: 1-888-123-4567-8900
+          form.page-contact-form(action='', method='post')
+            label Name *
+            input.name(type='text', name='name', required='')
+            label Email *
+            input.email(type='email', name='email', required='')
+            label Message *
+            textarea.message(name='message', required='')
+            input.submit.btn.light.p10-50.border-1(type='submit', value='SUBMIT')
+  // PAGE CONTENT END

@@ -1,0 +1,186 @@
+extends ../layout/home.pug
+
+block view
+
+  section.featured-img.text-center.about-bg
+    .overlay
+    .breadcrumbs
+      .table.width-100p.height-100p
+        .table-row
+          .table-cell.align-middle
+            .h4 ABOUT US
+            ul
+              li
+                a(href='index.html') Home
+              li
+                span -
+              li
+                span About Us
+  // PAGE CONTENT START
+  section.page-content
+    .container.page-content-wrapper
+      .row
+        .col-sm-6
+          .page-slider
+            .simple-slider.owl-carousel
+              img(src='assets/images/about-slide-2.jpg', alt='lorem ipsum dolor sit')
+              img(src='assets/images/about-slide-1.jpg', alt='lorem ipsum dolor sit')
+              img(src='assets/images/about-slide-2.jpg', alt='lorem ipsum dolor sit')
+              img(src='assets/images/about-slide-1.jpg', alt='lorem ipsum dolor sit')
+        .col-sm-6
+          .inner-content.gallery
+            h1 A Multipurpose Creative Design
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nisi enim, vulputate at justo tristique, tempor sagittis dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec sit amet ligula consequat urna posuere convallis.Cras porta dolor ut velit imperdiet, quis sodales tellus facilisis. Vestibulum magna turpis, tincidun blandit semper lorem. Donec sit amet ligula consequat urna posuere convallis
+            a.pretty.btn.default.mt20.with-arrow-btn(href='http://vimeo.com/7874398')
+              span XL VIDEO TOUR
+              i.fa.fa-play
+  // PAGE CONTENT END
+  // ABOUT SECTION START
+  section#about.section-wrapper.gray-background
+    .container
+      .row
+        .col-lg-12.heding-wrapper.text-center.scale-less.animate-in
+          span XL CREATIVE WEBSITE TEMPLATE
+          h2 A Digital Creative Design Egency
+          span.spliter
+      .row.about-wrapper
+        .col-lg-3.col-md-3.col-sm-6.col-xs-12.about-box.text-center.fade-in.animate-in
+          span.single-icon
+            i.fa.fa-heart
+          .clearfix
+          span.spliter
+          .h6 Pellentesque in Ipsum id Orci Porta Curabitur Aliquet Quam
+        .col-lg-3.col-md-3.col-sm-6.col-xs-12.about-box.text-center.fade-in.animate-in
+          span.single-icon
+            i.fa.fa-star
+          .clearfix
+          span.spliter
+          .h6 Curabitur arcu erat, accumsan mperdiet et, porttitor at sem.
+        .col-lg-3.col-md-3.col-sm-6.col-xs-12.about-box.text-center.fade-in.animate-in
+          span.single-icon
+            i.fa.fa-lightbulb-o
+          .clearfix
+          span.spliter
+          .h6 Mauris blandit aliquet elit, eget tincidunt nibh pulvinar
+        .col-lg-3.col-md-3.col-sm-6.col-xs-12.about-box.text-center.fade-in.animate-in
+          span.single-icon
+            i.fa.fa-trophy
+          .clearfix
+          span.spliter
+          .h6 Proin eget tortor risus Mauris blandit aliquet eli
+  // ABOUT SECTION END
+  // SPECILIZE SECTION START
+  section.section-wrapper.p0.flex.block-768
+    .w50p.w100p-768.flex.jc-flex-end.block-768
+      .mw585.mw100p-768.pt50.pr50.pb50.pl15.pr15-768
+        .heding-wrapper.pt0.priority.scale-less.animate-in
+          span SPECIALISED IN
+          h2 Our Expertise
+          span.spliter
+        .specilize-wrapper
+          .h6
+            | Consectetur adipiscing elit. Fusce nisi enim, Vulputate at Justo tristique, Tempor Sagittis Dolor.
+          p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit.Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+            strong quis no strud exercitation ullamco
+            |  It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    .w50p.w100p-768.theme-background.about-skills.flex.jd-column.jc-center.block-768
+      .pt50.pr50.pb50.pl50.pl15-768.pr15-768
+        .specilize-wrapper
+          .skills-slider-holder.skills-start
+            .progress.skill-bar.animate-in
+              .progress-bar(role='progressbar', aria-valuenow='100', aria-valuemin='0', aria-valuemax='100')
+                .skill
+                  | HTML
+                  .val 100%
+            .progress.skill-bar.animate-in
+              .progress-bar(role='progressbar', aria-valuenow='90', aria-valuemin='0', aria-valuemax='100')
+                .skill
+                  | PHOTOSHOP
+                  .val 90%
+            .progress.skill-bar.animate-in
+              .progress-bar(role='progressbar', aria-valuenow='75', aria-valuemin='0', aria-valuemax='100')
+                .skill
+                  | WORDPRESS
+                  .val 75%
+            .progress.skill-bar.animate-in
+              .progress-bar(role='progressbar', aria-valuenow='55', aria-valuemin='0', aria-valuemax='100')
+                .skill
+                  | PHP
+                  .val 55%
+  // SPECILIZE SECTION END
+  // TEAM SECTION START
+  section#team.section-wrapper.gray-background
+    .container
+      .row
+        .col-lg-12.heding-wrapper.text-left.scale-less.animate-in.text-center
+          span WE ARE EXPERT
+          h2 Meet Our Team
+          span.spliter
+      .row
+        .col-lg-3.col-sm-6
+          .team-holder.text-center.scale-big.team-box.animate-in
+            a(href='#')
+              img.img-responsive(src='assets/images/team-1.jpg', alt='team-img')
+            .name L. Frank Baum
+            .position Co-Founde
+            span.spliter
+            .clearfix
+            a(href='#')
+              i.fa.fa-facebook
+            a(href='#')
+              i.fa.fa-twitter
+            a(href='#')
+              i.fa.fa-pinterest
+            a(href='#')
+              i.fa.fa-instagram
+        .col-lg-3.col-sm-6
+          .team-holder.text-center.scale-big.team-box.animate-in
+            a(href='#')
+              img.img-responsive(src='assets/images/team-2.jpg', alt='team-img')
+            .name Edgar Rice Burroughs
+            .position Graphic Designer
+            span.spliter
+            .clearfix
+            a(href='#')
+              i.fa.fa-facebook
+            a(href='#')
+              i.fa.fa-twitter
+            a(href='#')
+              i.fa.fa-pinterest
+            a(href='#')
+              i.fa.fa-instagram
+        .col-lg-3.col-sm-6
+          .team-holder.text-center.scale-big.team-box.animate-in
+            a(href='#')
+              img.img-responsive(src='assets/images/team-3.jpg', alt='team-img')
+            .name Lewis Carroll
+            .position Photographer
+            span.spliter
+            .clearfix
+            a(href='#')
+              i.fa.fa-facebook
+            a(href='#')
+              i.fa.fa-twitter
+            a(href='#')
+              i.fa.fa-pinterest
+            a(href='#')
+              i.fa.fa-instagram
+        .col-lg-3.col-sm-6
+          .team-holder.text-center.scale-big.team-box.animate-in
+            a(href='#')
+              img.img-responsive(src='assets/images/team-4.jpg', alt='team-img')
+            .name Jules Verne
+            .position SEO Expert
+            span.spliter
+            .clearfix
+            a(href='#')
+              i.fa.fa-facebook
+            a(href='#')
+              i.fa.fa-twitter
+            a(href='#')
+              i.fa.fa-pinterest
+            a(href='#')
+              i.fa.fa-instagram
+  // TEAM SECTION END
