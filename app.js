@@ -46,7 +46,7 @@ app.use('/', routes);
 
 
 app.listen(PORT, ()=> {
-//app.listen(process.env.ALWAYSDATA_HTTPD_PORT, process.env.ALWAYSDATA_HTTPD_IP, function () {
-  console.log(`Sever escuchando en el puerto ${PORT}`);
+app.listen(process.env.ALWAYSDATA_HTTPD_PORT, process.env.ALWAYSDATA_HTTPD_IP, function () {
+  //console.log(`Sever escuchando en el puerto ${PORT}`);
 });
 
