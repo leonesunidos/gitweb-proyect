@@ -87,6 +87,24 @@ controller.teamGet = function(req, res){
     res.render('pages/team');
 }
 
+controller.electricityGet = function(req, res){
+    console.log('electricity');
+    res.render('pages/solutions-electricity');
+}
+controller.controlGet = function(req, res){
+    console.log('control');
+    res.render('pages/solutions-control');
+}
+controller.telecoGet = function(req, res){
+    console.log('telecomunicaciones');
+    res.render('pages/solutions-teleco');
+}
+controller.saneaGet = function(req, res){
+    console.log('saneamiento');
+    res.render('pages/solutions-sanea');
+}
+
+
 controller.contactPost=function(req, res){
     console.log("entro a el post");
     var newUserMysql = new Object();
@@ -105,7 +123,5 @@ controller.contactPost=function(req, res){
         
     });	*/
 }
-
-
 
 module.exports = controller;

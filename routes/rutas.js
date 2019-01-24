@@ -21,6 +21,11 @@ router.get('/services-detail', rutasController.services_detailGet);
 router.get('/about', rutasController.aboutGet);
 router.get('/services', rutasController.servicesGet);
 router.get('/team', rutasController.teamGet);
+router.get('/solutions-electricity', rutasController.electricityGet);
+router.get('/solutions-control', rutasController.controlGet);
+router.get('/solutions-teleco', rutasController.telecoGet);
+router.get('/solutions-sanea', rutasController.saneaGet);
+
 
 
 
