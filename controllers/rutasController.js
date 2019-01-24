@@ -1,13 +1,20 @@
+var mysql = require('mysql');
+var dbconfig = require('../config/database');
+var connection = mysql.createConnection(dbconfig.connection);
 
 const controller = {};
 controller.indexGet = function(req, res){
     console.log('index');
-    res.render('pages/index');
+    res.render('pages/index', {
+        title: 'Inicio | MVD',
+        tipo: 'inicio'});
 }
 
 controller.aboutGet = function(req, res){
     console.log('index');
-    res.render('pages/about');
+    res.render('pages/about', {
+        title: 'Nosotros | MVD',
+        tipo: 'nosotros'});
 }
 
 controller.blog_detail_leftbarGet = function(req, res){
@@ -79,6 +86,7 @@ controller.teamGet = function(req, res){
     console.log('team');
     res.render('pages/team');
 }
+
 controller.electricityGet = function(req, res){
     console.log('electricity');
     res.render('pages/solutions-electricity');
@@ -95,6 +103,28 @@ controller.saneaGet = function(req, res){
     console.log('saneamiento');
     res.render('pages/solutions-sanea');
 }
+
+
+controller.contactPost=function(req, res){
+    console.log("entro a el post");
+    var newUserMysql = new Object();
+    newUserMysql.name       = req.body.name;
+    newUserMysql.email      =req.body.email;
+    newUserMysql.message   =req.body.message;
+    var insertQuery = "INSERT INTO braindtic ( name,email,telefono,asunto ) values ('" + newUserMysql.name +"','"+ newUserMysql.email +"','"+ newUserMysql.telefono +"','"+ newUserMysql.asunto +"')";
+    console.log(insertQuery);
+    
+    /*connection.query('USE ' + dbconfig.database);
+    connection.query(insertQuery,function(err,rows){
+        res.redirect('/');
+        console.log(err);
+        console.log(rows);
+        
+        
+    });	*/
+}
+
+
 
 
 module.exports = controller;

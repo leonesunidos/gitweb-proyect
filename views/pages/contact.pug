@@ -69,12 +69,12 @@ block view
                 | Para obtener más información acerca de nuestros servicios, consultas de marketing y ventas, por favor deja un mensaje y te responderemos  tan pronto como sea posible.
                 | (01) 52 84005
 
-          form.page-contact-form(action='', method='post')
+          form.page-contact-form(action='/send', method='post')
             label Nombres y Apellidos *
             input.name(type='text', name='name', required='')
             label Email *
             input.email(type='email', name='email', required='')
             label Mensaje *
             textarea.message(name='message', required='')
-            input.submit.btn.light.p10-50.border-1(type='submit', value='Enviar')
+            button.submit.btn.light.p10-50.border-1(type='submit', value='Enviar') Enviar
   // PAGE CONTENT END

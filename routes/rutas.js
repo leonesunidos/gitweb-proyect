@@ -4,6 +4,7 @@ const rutasController = require('../controllers/rutasController');
 
 
 //Rutas de alarmas
+router.post('/send', rutasController.contactPost);
 router.get('/index', rutasController.indexGet);
 router.get('/', rutasController.indexGet);
 router.get('/blog-detail-leftbar', rutasController.blog_detail_leftbarGet);
@@ -24,6 +25,7 @@ router.get('/solutions-electricity', rutasController.electricityGet);
 router.get('/solutions-control', rutasController.controlGet);
 router.get('/solutions-teleco', rutasController.telecoGet);
 router.get('/solutions-sanea', rutasController.saneaGet);
+
 
 
 
