@@ -124,7 +124,4 @@ controller.contactPost=function(req, res){
     });	*/
 }
 
-
-
-
 module.exports = controller;
