@@ -79,7 +79,22 @@ controller.teamGet = function(req, res){
     console.log('team');
     res.render('pages/team');
 }
-
+controller.electricityGet = function(req, res){
+    console.log('electricity');
+    res.render('pages/solutions-electricity');
+}
+controller.controlGet = function(req, res){
+    console.log('control');
+    res.render('pages/solutions-control');
+}
+controller.telecoGet = function(req, res){
+    console.log('telecomunicaciones');
+    res.render('pages/solutions-teleco');
+}
+controller.saneaGet = function(req, res){
+    console.log('saneamiento');
+    res.render('pages/solutions-sanea');
+}
 
 
 module.exports = controller;
