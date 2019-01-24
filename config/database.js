@@ -1,9 +1,9 @@
 module.exports = {
     'connection':{
 
-     'host':'localhost',
-     'user':'root',
-     'password':'aleluis'
+     'host':'instanciax10.cmi7kwsmghwd.us-east-2.rds.amazonaws.com',
+     'user':'braindtic',
+     'password':'braindtic'
     },
-    'database':'mydb',
+    'database':'braindtic',
    }

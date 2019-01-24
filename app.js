@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 
 
 const app = express();
-const PORT = process.env.PORT || 80;
+const PORT = process.env.PORT || 9001;
 require('dotenv').load();
 
 
@@ -45,8 +45,8 @@ app.use('/', routes);
 
 
 
-//app.listen(PORT, ()=> {
-app.listen(process.env.ALWAYSDATA_HTTPD_PORT, process.env.ALWAYSDATA_HTTPD_IP, function () {
-  console.log(`Sever escuchando en el puerto ${port}`);
+app.listen(PORT, ()=> {
+//app.listen(process.env.ALWAYSDATA_HTTPD_PORT, process.env.ALWAYSDATA_HTTPD_IP, function () {
+  console.log(`Sever escuchando en el puerto ${PORT}`);
 });
 
