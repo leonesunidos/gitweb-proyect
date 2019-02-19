@@ -25,6 +25,10 @@ router.get('/solutions-electricity', rutasController.electricityGet);
 router.get('/solutions-control', rutasController.controlGet);
 router.get('/solutions-teleco', rutasController.telecoGet);
 router.get('/solutions-sanea', rutasController.saneaGet);
+router.get('/proyectocp03', rutasController.proy03Get);
+router.get('/proyectocp04', rutasController.proy04Get);
+router.get('/proyectocp08', rutasController.proy08Get);
+
 
 
 

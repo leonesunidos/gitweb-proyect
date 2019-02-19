@@ -103,6 +103,18 @@ controller.saneaGet = function(req, res){
     console.log('saneamiento');
     res.render('pages/solutions-sanea');
 }
+controller.proy03Get = function(req, res){
+    console.log('proyecto03');
+    res.render('pages/proyecto03');
+}
+controller.proy04Get = function(req, res){
+    console.log('proyecto04');
+    res.render('pages/proyecto04');
+}
+controller.proy08Get = function(req, res){
+    console.log('proyecto08');
+    res.render('pages/proyecto08');
+}
 
 
 controller.contactPost=function(req, res){
