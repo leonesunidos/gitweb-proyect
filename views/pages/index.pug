@@ -962,11 +962,20 @@ block view
                     span
                       | (01) 528-4005
           .col-lg-7.col-md-7.col-sm-7.col-xs-12.col-lg-offset-1.col-sm-pull-5
-            form.contact-form(action='send', method='post')
-              input.name(type='text', name='name', placeholder='Name', required='')
-              input.email(type='email', name='email', placeholder='Email', required='')
-              textarea.message(name='message', placeholder='Message', required='')
-              button.submit.btn.transparent.p10-50.border-2(type='clear', value='SUBMIT') Enviar
+
+               
+            form(action="addMessage", method="post")
+              div.form-group
+                label(style="color:white") Nombres y Apellidos *
+                input.form-control(type='text', name='name', required='')
+              div.form-group
+                label(style="color:white") Email *
+                input.form-control(type='email', name='email', required='')
+              div.form-group
+                label(style="color:white") Mensaje *
+                textarea.form-control(name='message', required='')
+              div.form-group
+                button.btn(type='submit', value='Enviar') Enviar
   // CONTACT SECTION END
   // MAP SECTION START
   section.map-container

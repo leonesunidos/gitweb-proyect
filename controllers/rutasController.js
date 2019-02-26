@@ -1,6 +1,12 @@
+var dbconfig = require('../config/database');
+var Database = require('../models/database');
+
+var database = new Database(dbconfig.connection);
+
 var mysql = require('mysql');
 var dbconfig = require('../config/database');
 var connection = mysql.createConnection(dbconfig.connection);
+
 
 const controller = {};
 controller.indexGet = function(req, res){
@@ -49,17 +55,38 @@ controller.blogGet = function(req, res){
 
 controller.contactGet = function(req, res){
     console.log('contact');
+
     res.render('pages/contact');
 }
+controller.contactMessage = function(req, res){
+    console.log("controlador de envio");
+    var query = 'INSERT INTO consultas ( nombre, email, consulta ) values ( ?, ?, ? )'
+    var params = [req.body.name, req.body.email, req.body.message];
+
+    database.query(query, params)
+    .then( results => {
+        
+        console.log(results);
+        console.log( { success: true, "dbResponse": results } );
+        res.render('pages/contact');
+    })
+    .catch( err => {
+        
+        console.log(err);
+        console.log( { error: err } );
+        res.render('pages/contact');
+    })
+}
+
 
 controller.portfolio_detailGet = function(req, res){
     console.log('portfolio-detail');
     res.render('pages/portfolio-detail');
 }
 
-controller.portfolioGet = function(req, res){
-    console.log('portfolio');
-    res.render('pages/portfolio');
+controller.galeriaGet = function(req, res){
+    console.log('galeria');
+    res.render('pages/galeria');
 }
 
 controller.priceGet = function(req, res){
@@ -135,13 +162,24 @@ controller.ListaGet = function(req, res){
 
 
 controller.contactPost=function(req, res){
-    console.log("entro a el post");
-    var newUserMysql = new Object();
-    newUserMysql.name       = req.body.name;
-    newUserMysql.email      =req.body.email;
-    newUserMysql.message   =req.body.message;
-    var insertQuery = "INSERT INTO braindtic ( name,email,telefono,asunto ) values ('" + newUserMysql.name +"','"+ newUserMysql.email +"','"+ newUserMysql.telefono +"','"+ newUserMysql.asunto +"')";
-    console.log(insertQuery);
+    //ejemplo
+    var query = 'INSERT INTO consultas ( nombre, email, consulta ) values ( ?, ?, ? )'
+    var params = [req.body.name, req.body.email, req.body.message];
+
+    database.query(query, params)
+    .then( results => {
+        alert("aqui");
+        console.log(results);
+        res.json( { success: true, "dbResponse": results } );
+	})
+    .catch( err => {
+        alert("error");
+        console.log(err);
+        res.json( { error: err } );
+    })
+    
+
+
     
     /*connection.query('USE ' + dbconfig.database);
     connection.query(insertQuery,function(err,rows){

@@ -15,7 +15,7 @@ router.get('/blog-with-rightbar', rutasController.blog_with_rightbarGet);
 router.get('/blog', rutasController.blogGet);
 router.get('/contact', rutasController.contactGet);
 router.get('/portfolio-detail', rutasController.portfolio_detailGet);
-router.get('/portfolio', rutasController.portfolioGet);
+router.get('/galeria', rutasController.galeriaGet);
 router.get('/price', rutasController.priceGet);
 router.get('/services-detail', rutasController.services_detailGet);
 router.get('/about', rutasController.aboutGet);
@@ -29,6 +29,7 @@ router.get('/proyectocp03', rutasController.proy03Get);
 router.get('/proyectocp04', rutasController.proy04Get);
 router.get('/proyectocp08', rutasController.proy08Get);
 router.get('/listamvd', rutasController.ListaGet);
+router.post('/addMessage', rutasController.contactMessage);
 
 
 
