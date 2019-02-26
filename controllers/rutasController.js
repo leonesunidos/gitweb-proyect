@@ -116,6 +116,23 @@ controller.proy08Get = function(req, res){
     res.render('pages/proyecto08');
 }
 
+controller.ListaGet = function(req, res){
+    console.log('ListaGet');
+    
+    var query = 'SELECT * FROM consultas';
+    connection.query('USE ' + dbconfig.database);
+    connection.query(query, (err, cursos) => {
+        console.log(cursos);
+        if (err) {
+            res.json(err);
+        }
+        res.render('pages/lista', {
+        cursos: cursos,
+        title: 'Usuarios de Plataforma'
+        });
+    });
+}
+
 
 controller.contactPost=function(req, res){
     console.log("entro a el post");

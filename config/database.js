@@ -5,5 +5,5 @@ module.exports = {
      'user':'braindtic',
      'password':'braindtic'
     },
-    'database':'braindtic',
+    'database':'mvd',
    }
