@@ -9,143 +9,182 @@ var connection = mysql.createConnection(dbconfig.connection);
 
 
 const controller = {};
-controller.indexGet = function(req, res){
+controller.indexGet = function (req, res) {
     console.log('index');
     res.render('pages/index', {
         title: 'Inicio | MVD',
-        tipo: 'inicio'});
+        tipo: 'inicio'
+    });
 }
 
-controller.aboutGet = function(req, res){
+controller.aboutGet = function (req, res) {
     console.log('index');
     res.render('pages/about', {
         title: 'Nosotros | MVD',
-        tipo: 'nosotros'});
+        tipo: 'nosotros'
+    });
 }
 
-controller.blog_detail_leftbarGet = function(req, res){
+controller.blog_detail_leftbarGet = function (req, res) {
     console.log('blog-detail-leftbar');
     res.render('pages/blog-detail-leftbar');
 }
 
-controller.blog_detail_rightbarGet = function(req, res){
+controller.blog_detail_rightbarGet = function (req, res) {
     console.log('blog_detail_rightbar');
     res.render('pages/blog-detail-rightbar');
 }
 
-controller.blog_detailGet = function(req, res){
+controller.blog_detailGet = function (req, res) {
     console.log('blog_detail');
     res.render('pages/blog-detail');
 }
 
-controller.blog_with_leftbarGet = function(req, res){
+controller.blog_with_leftbarGet = function (req, res) {
     console.log('blog_with_leftbar');
     res.render('pages/blog-with-leftbar');
 }
 
-controller.blog_with_rightbarGet = function(req, res){
+controller.blog_with_rightbarGet = function (req, res) {
     console.log('blog_with_rightbar');
     res.render('pages/blog-with-rightbar');
 }
 
-controller.blogGet = function(req, res){
+controller.blogGet = function (req, res) {
     console.log('blog');
     res.render('pages/blog');
 }
 
-controller.contactGet = function(req, res){
+controller.contactGet = function (req, res) {
     console.log('contact');
 
     res.render('pages/contact');
 }
-controller.contactMessage = function(req, res){
+controller.contactMessage = function (req, res) {
     console.log("controlador de envio");
     var query = 'INSERT INTO consultas ( nombre, email, consulta ) values ( ?, ?, ? )'
     var params = [req.body.name, req.body.email, req.body.message];
 
     database.query(query, params)
-    .then( results => {
-        
-        console.log(results);
-        console.log( { success: true, "dbResponse": results } );
-        res.render('pages/contact');
-    })
-    .catch( err => {
-        
-        console.log(err);
-        console.log( { error: err } );
-        res.render('pages/contact');
-    })
+        .then(results => {
+
+            console.log(results);
+            console.log({ success: true, "dbResponse": results });
+            res.render('pages/contact');
+        })
+        .catch(err => {
+
+            console.log(err);
+            console.log({ error: err });
+            res.render('pages/contact');
+        })
 }
 
 
-controller.portfolio_detailGet = function(req, res){
+controller.portfolio_detailGet = function (req, res) {
     console.log('portfolio-detail');
     res.render('pages/portfolio-detail');
 }
 
-controller.galeriaGet = function(req, res){
+controller.galeriaGet = function (req, res) {
     console.log('galeria');
     res.render('pages/galeria');
 }
 
-controller.priceGet = function(req, res){
+controller.priceGet = function (req, res) {
     console.log('price');
     res.render('pages/price');
 }
 
-controller.services_detailGet = function(req, res){
+controller.services_detailGet = function (req, res) {
     console.log('services-detail');
     res.render('pages/services-detail');
 }
 
-controller.aboutGet = function(req, res){
+controller.aboutGet = function (req, res) {
     console.log('about');
     res.render('pages/about');
 }
 
-controller.servicesGet = function(req, res){
+controller.servicesGet = function (req, res) {
     console.log('services');
     res.render('pages/services');
 }
 
-controller.teamGet = function(req, res){
+controller.teamGet = function (req, res) {
     console.log('team');
     res.render('pages/team');
 }
 
-controller.electricityGet = function(req, res){
+controller.electricityGet = function (req, res) {
     console.log('electricity');
     res.render('pages/solutions-electricity');
 }
-controller.controlGet = function(req, res){
+controller.controlGet = function (req, res) {
     console.log('control');
     res.render('pages/solutions-control');
 }
-controller.telecoGet = function(req, res){
+controller.telecoGet = function (req, res) {
     console.log('telecomunicaciones');
     res.render('pages/solutions-teleco');
 }
-controller.saneaGet = function(req, res){
+controller.saneaGet = function (req, res) {
     console.log('saneamiento');
     res.render('pages/solutions-sanea');
 }
-controller.proy03Get = function(req, res){
+controller.tarificadoresGet = function (req, res) {
+    console.log('solutions-tarificadores');
+    res.render('pages/solutions-tarificadores');
+}
+controller.pozotierraGet = function (req, res) {
+    console.log('solutions-pozotierra');
+    res.render('pages/solutions-pozotierra');
+}
+controller.aireacondicionadoGet = function (req, res) {
+    console.log('solutions-aireacondicionado');
+    res.render('pages/solutions-aireacondicionado');
+}
+controller.videovigilanciaGet = function (req, res) {
+    console.log('solutions-videovigilancia');
+    res.render('pages/solutions-videovigilancia');
+}
+controller.accesoriosGet = function (req, res) {
+    console.log('solutions-accesorios');
+    res.render('pages/solutions-accesorios');
+}
+
+controller.proy03Get = function (req, res) {
     console.log('proyecto03');
     res.render('pages/proyecto03');
 }
-controller.proy04Get = function(req, res){
+controller.proy04Get = function (req, res) {
     console.log('proyecto04');
     res.render('pages/proyecto04');
 }
-controller.proy08Get = function(req, res){
+controller.proy08Get = function (req, res) {
     console.log('proyecto08');
     res.render('pages/proyecto08');
 }
+controller.proy09Get = function (req, res) {
+    console.log('proyecto09');
+    res.render('pages/proyecto09');
+}
+controller.proy10Get = function (req, res) {
+    console.log('proyecto10');
+    res.render('pages/proyecto10');
+}
+controller.proy11Get = function (req, res) {
+    console.log('proyecto11');
+    res.render('pages/proyecto11');
+}
+controller.proy12Get = function (req, res) {
+    console.log('proyecto12');
+    res.render('pages/proyecto12');
+}
 
-controller.ListaGet = function(req, res){
+controller.ListaGet = function (req, res) {
     console.log('ListaGet');
-    
+
     var query = 'SELECT * FROM consultas';
     connection.query('USE ' + dbconfig.database);
     connection.query(query, (err, cursos) => {
@@ -154,33 +193,33 @@ controller.ListaGet = function(req, res){
             res.json(err);
         }
         res.render('pages/lista', {
-        cursos: cursos,
-        title: 'Usuarios de Plataforma'
+            cursos: cursos,
+            title: 'Usuarios de Plataforma'
         });
     });
 }
 
 
-controller.contactPost=function(req, res){
+controller.contactPost = function (req, res) {
     //ejemplo
     var query = 'INSERT INTO consultas ( nombre, email, consulta ) values ( ?, ?, ? )'
     var params = [req.body.name, req.body.email, req.body.message];
 
     database.query(query, params)
-    .then( results => {
-        alert("aqui");
-        console.log(results);
-        res.json( { success: true, "dbResponse": results } );
-	})
-    .catch( err => {
-        alert("error");
-        console.log(err);
-        res.json( { error: err } );
-    })
-    
+        .then(results => {
+            alert("aqui");
+            console.log(results);
+            res.json({ success: true, "dbResponse": results });
+        })
+        .catch(err => {
+            alert("error");
+            console.log(err);
+            res.json({ error: err });
+        })
 
 
-    
+
+
     /*connection.query('USE ' + dbconfig.database);
     connection.query(insertQuery,function(err,rows){
         res.redirect('/');

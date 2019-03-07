@@ -33,7 +33,7 @@ block view
                 .clearfix
                 span.small-spliter.animate-in.spliter
               .right-detail.table-cell.align-middle
-                span Cal.Coronel Miguel Rios N°1794 - Urb:Cata, Lima, Lima. 
+                span Calle 9 Mz.Q.Lt.66 - Urb:Señor de los Milagros, San Martin de Porres, Lima. 
           .detail-holder.table
             .table-row
               .left-detail.table-cell.align-middle
@@ -43,9 +43,9 @@ block view
                 span.small-spliter.animate-in.spliter
               .right-detail.table-cell.align-middle
                 span
-                  a(href='mailto:info@ingenieriamvd.com') info@ingenieriamvd.com
+                  a(href='mailto:aleri_55@hotmail.com') aleri_55@hotmail.com
                   br
-                  a(href='mailto:info@ingenieriamvd.com') info@ingenieriamvd.com
+                  a(href='mailto:wramon@ryfcomunicaciones.com') wramon@ryfcomunicaciones.com
           .detail-holder.table
             .table-row
               .left-detail.table-cell.align-middle
@@ -55,9 +55,11 @@ block view
                 span.small-spliter.animate-in.spliter
               .right-detail.table-cell.align-middle
                 span
-                  | (+51) 961 950 018
+                  | Movistar: 995676244 
                   br
-                  | 								(01)  528 4005
+                  | Claro: 991224300
+                  br
+                  | 				Central:(01)  4852027
           // MAP SECTION START
           section.map-container
             #map-canvas
@@ -66,13 +68,19 @@ block view
           .row
             .col-md-9
               p
-                | Para obtener más información acerca de nuestros servicios, consultas de marketing y ventas, por favor deja un mensaje y te responderemos  tan pronto como sea posible.
-                | (01) 52 84005
+                | Para nosotros es un placer atenderlo, si esta interesado en alguno de nuestros productos o servicios, sírvase contactarse con nosotros a través del siguiente formulario.
+                | (01) 51 4852027
 
           form(action="addMessage", method="post")
             div.form-group
               label Nombres y Apellidos *
               input.form-control(type='text', name='name', required='')
+            div.form-group
+              label Empresa *
+              input.form-control(type='empresa', name='empresa', required='')  
+            div.form-group
+              label Telefono *
+              input.form-control(type='telefono', name='telefono', required='')  
             div.form-group
               label Email *
               input.form-control(type='email', name='email', required='')
