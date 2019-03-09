@@ -78,7 +78,7 @@
 	z-index: auto;
 }
 .width-100p {
-	width: 100%;
+	width: 60%;
 }
 .height-100p {
 	height: 100%;
@@ -453,7 +453,13 @@ header[data-position="relative"] + .featured-img {
 	padding: 10px 10px 0;
 }
 .about-bg {
-	background: url(../images/about-breadcrumbs.jpg) center center no-repeat;
+	background-image: url(../images/imgNOSOTROS1.png);
+}
+.iniciovariado-bg{
+	background-color: white;
+}
+.iniciogeneral-bg {
+	background-image: url(../images/imgINICIO1.jpg);
 }
 .portfolio-bg {
 	background: url(../images/portfolio-breadcrumbs.jpg) center center no-repeat;
@@ -465,8 +471,15 @@ header[data-position="relative"] + .featured-img {
 	background: url(../images/team-breadcrumbs.jpg) center center no-repeat;
 }
 .services-bg {
-	background: url(../images/services-breadcrumbs.jpg) center center no-repeat;
-}
+	
+	background-image: url(../images/mundoprueba2.jpg);
+	
+	}
+.mundoprueba-bg {
+	
+		background-image: url(../images/mundoprueba.jpg);
+		
+		}	
 .contact-bg {
 	background: url(../images/contact-breadcrumbs.jpg) center center no-repeat;
 }
@@ -474,7 +487,10 @@ header[data-position="relative"] + .featured-img {
 	overflow: hidden;
 }
 .detail-page-feature img {
-	width: 100%;
+	display: block;
+	margin: auto;
+	width: 80% ;
+	
 }
 .detail-page p {
 	margin: 20px 0;
@@ -1800,7 +1816,7 @@ textarea:-moz-placeholder {
 /* ---------------------------------- FOOTER SECTION ---------------------------------- */
 footer {
 	height: auto;
-	background: #424242;
+	background: #261325;
 	padding: 60px 0 60px 0;
 }
 footer .footer-left div {
@@ -1986,6 +2002,10 @@ a.scrollToTop {
 	transform: scale(1);
 	opacity: 1;
 }
+.separandostylo{
+	width: 50px;
+	align-content: center;
+}
 .small-spliter {
 	width: 50px;
 }
@@ -2081,6 +2101,7 @@ a.scrollToTop {
 	}
 	.detail-page-feature {
 		height: auto;
+		
 	}
 	.want-wrapper, .want-wrapper .animate-in.animated {
 		text-align: center;
