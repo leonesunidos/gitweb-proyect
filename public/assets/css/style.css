@@ -551,7 +551,7 @@ a.invert-btn:hover {
 }
 
 .mundoprueba-bg {
-	background-image: url(../images/mundoprueba.jpg);
+	background-image: url(../images/imgINICIO1.jpg);
 }
 
 .contact-bg {
@@ -1137,6 +1137,9 @@ header nav.main-nav ul li ul li a:hover {
 	-webkit-transition: all 0.2s ease;
 	-moz-transition: all 0.2s ease;
 	transition: all 0.2s ease;
+}
+.coloreandotext{
+	color: #1f0b57;
 }
 
 .section-wrapper .heding-wrapper p {
@@ -2110,6 +2113,7 @@ textarea:-moz-placeholder {
 	background: none;
 }
 
+
 .contact-form textarea:focus {
 	background: #fff;
 }
@@ -2206,11 +2210,12 @@ textarea:-moz-placeholder {
 	
 }
 
+
 /* ---------------------------------- FOOTER SECTION ---------------------------------- */
 
 footer {
 	height: auto;
-	background: #261325;
+	background: rgb(7, 7, 44);
 	padding: 60px 0 60px 0;
 }
 

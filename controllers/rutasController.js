@@ -12,7 +12,7 @@ const controller = {};
 controller.indexGet = function (req, res) {
     console.log('index');
     res.render('pages/index', {
-        title: 'Inicio | MVD',
+        title: 'Inicio | RYF',
         tipo: 'inicio'
     });
 }
@@ -20,7 +20,7 @@ controller.indexGet = function (req, res) {
 controller.aboutGet = function (req, res) {
     console.log('index');
     res.render('pages/about', {
-        title: 'Nosotros | MVD',
+        title: 'Nosotros | RYF',
         tipo: 'nosotros'
     });
 }
