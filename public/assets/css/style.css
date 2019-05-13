@@ -2205,7 +2205,7 @@ textarea:-moz-placeholder {
 /* ---------------------------------- MAP SECTION ---------------------------------- */
 
 #map-canvas {
-	width: 50%;
+	width: 100%;
 	height: 230px;
 	
 }
